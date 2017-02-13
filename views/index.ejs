@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html class="no-js"> 
+<!--<![endif]-->
+	<%include common/header.ejs %>
+	<body>
+		<div id="fh5co-offcanvas">
+			<%include common/menu.ejs %>
+		</div>
+		<!-- END #fh5co-offcanvas -->
+		<header id="fh5co-header">
+			
+			<div class="container-fluid">
+
+				<div class="row">
+					<a href="#" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
+					<ul class="fh5co-social">
+						<li><a href="#"><i class="icon-twitter"></i></a></li>
+						<li><a href="#"><i class="icon-facebook"></i></a></li>
+						<li><a href="#"><i class="icon-instagram"></i></a></li>
+					</ul>
+					<div class="col-lg-12 col-md-12 text-center">
+						<h1 id="fh5co-logo"><a href="/"><%= title %> <sup>TM</sup></a></h1>
+					</div>
+
+				</div>
+			
+			</div>
+
+		</header>
+		<!-- END #fh5co-header -->
+		<div class="container-fluid">
+			<div class="row fh5co-post-entry">
+
+				<% if (indexList.list.length) { %>  
+				    <% indexList.list.forEach(function(item){ %>  
+				        <article class="col-lg-3 col-md-3 col-sm-3 col-xs-6 col-xxs-12 animate-box" data-id="<%= item.id %>">
+							<figure>
+								<a href="/single/<%= item.id %>"><img src="images/<%= item.img %>" alt="<%= item.desc %>" class="img-responsive"></a>
+							</figure>
+							<span class="fh5co-meta"><a href="/single/<%= item.id %>"><%= item.title %></a></span>
+							<h2 class="fh5co-article-title"><a href="/single/<%= item.id %>" <%= item.desc %></a></h2>
+							<span class="fh5co-meta fh5co-date"><%= item.date %></span>
+						</article>
+						<div class="clearfix visible-xs-block"></div>
+				    <% }) %>  
+				<% } %>  
+				
+			</div>
+		</div>
+
+		<%include common/footer.ejs %>
+
+	</body>
+</html>
+
