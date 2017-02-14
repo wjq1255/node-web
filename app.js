@@ -10,6 +10,9 @@ var single = require('./routes/single');
 var users = require('./routes/users');
 var spider = require('./routes/spider');
 
+var loggerFactory = require('./node_modules/app/core/logger');
+var accessLogger = loggerFactory.getAccessLogger();
+
 var app = express();
 
 // view engine setup
@@ -31,9 +34,15 @@ app.use('/spider', spider);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
-  var err = new Error('Not Found');
-  err.status = 404;
-  next(err);
+	console.log("traceId" + "|" + req.originalUrl + "|" + req.body);
+	accessLogger.info("traceId" + "|" + req.originalUrl + "|" + req.body);
+    var err = new Error('Not Found');
+    err.status = 404;
+    res.on('finish', function () {
+        accessLogger.info("traceId" + "|" + res.statusCode + "|" + res.statusMessage);
+    });
+    res.setHeader("Content-Encoding", "UTF-8");
+    next(err);
 });
 
 // error handler
@@ -46,5 +55,6 @@ app.use(function(err, req, res, next) {
   res.status(err.status || 500);
   res.render('error');
 });
+
 
 module.exports = app;
