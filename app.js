@@ -10,7 +10,7 @@ var single = require('./routes/single');
 var users = require('./routes/users');
 var spider = require('./routes/spider');
 
-var loggerFactory = require('./node_modules/app/core/logger');
+var loggerFactory = require('./js/core/logger');
 var accessLogger = loggerFactory.getAccessLogger();
 
 var app = express();

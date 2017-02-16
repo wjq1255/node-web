@@ -1,0 +1,6 @@
+[2017-02-16 09:02:47.980] [INFO] access - traceId|/images/favicon.ico|[object Object]
+[2017-02-16 09:02:47.987] [INFO] access - traceId|404|Not Found
+[2017-02-16 09:05:36.153] [INFO] access - traceId|/eee|[object Object]
+[2017-02-16 09:05:36.188] [INFO] access - traceId|404|Not Found
+[2017-02-16 09:05:36.246] [INFO] access - traceId|/favicon.ico|[object Object]
+[2017-02-16 09:05:36.249] [INFO] access - traceId|404|Not Found

@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 
 var fs = require('fs');
-var logger = require('../node_modules/app/core/logger');
+var logger = require('../js/core/logger');
 
 
 /* GET home page. */
