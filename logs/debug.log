@@ -2,3 +2,17 @@
 [2017-02-16 11:34:16.973] [ERROR] debug - 数据库操作异常Error: ER_NO_SUCH_TABLE: Table 'jinweb.wp_posts' doesn't exist
 [2017-02-16 11:35:12.315] [ERROR] debug - 数据库操作异常Error: ER_NO_SUCH_TABLE: Table 'jinweb.wp_posts' doesn't exist
 [2017-02-16 11:36:28.922] [ERROR] debug - 数据库操作异常Error: ER_NO_SUCH_TABLE: Table 'jinweb.wp_posts' doesn't exist
+[2017-02-17 16:35:50.427] [ERROR] debug - articles----undefined
+[2017-02-17 16:36:50.386] [ERROR] debug - articles----undefined
+[2017-02-17 16:36:51.918] [ERROR] debug - articles----undefined
+[2017-02-17 16:36:52.758] [ERROR] debug - articles----undefined
+[2017-02-17 16:36:54.407] [ERROR] debug - articles----undefined
+[2017-02-17 16:38:13.407] [ERROR] debug - articles----undefined
+[2017-02-17 16:38:16.358] [ERROR] debug - articles----undefined
+[2017-02-17 16:38:17.053] [ERROR] debug - articles----undefined
+[2017-02-17 16:38:17.392] [ERROR] debug - articles----undefined
+[2017-02-17 16:39:45.587] [ERROR] debug - articles----undefined
+[2017-02-17 16:42:46.846] [ERROR] debug - article----------add
+[2017-02-17 16:42:46.852] [ERROR] debug - articles----undefined
+[2017-02-17 16:43:00.656] [ERROR] debug - article----------del
+[2017-02-17 16:43:00.657] [ERROR] debug - articles----undefined
